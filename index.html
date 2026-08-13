@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Privacy Policy · Habit Quit</title>
+<meta name="description" content="Privacy policy for the Habit Quit iOS app. Everything you enter stays on your device.">
+<link rel="icon" href="appicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="appicon.svg">
+<style>
+  :root {
+    --accent: #17a862;
+    --bg: #ffffff;
+    --card: #f6f8f7;
+    --bar: #fafbfa;
+    --text: #16201b;
+    --muted: #5c6b63;
+    --line: #e4eae6;
+    --line-soft: #eef2f0;
+    --glow: rgba(23, 168, 98, 0.13);
+    --icon-shadow: 0 10px 28px rgba(16, 32, 24, 0.18), 0 2px 6px rgba(16, 32, 24, 0.10);
+    --icon-ring: rgba(16, 32, 24, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent: #2fd47b;
+      --bg: #0f1512;
+      --card: #171f1a;
+      --bar: #121916;
+      --text: #e8efea;
+      --muted: #93a49a;
+      --line: #263029;
+      --line-soft: #1e2721;
+      --glow: rgba(47, 212, 123, 0.16);
+      --icon-shadow: 0 12px 32px rgba(0, 0, 0, 0.55), 0 2px 8px rgba(0, 0, 0, 0.4);
+      --icon-ring: rgba(255, 255, 255, 0.08);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 700px; margin: 0 auto; padding: 0 22px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ---------- Header ---------- */
+  .site-header {
+    position: relative;
+    overflow: hidden;
+    background: var(--bar);
+    border-bottom: 1px solid var(--line);
+  }
+  .site-header::before {
+    content: "";
+    position: absolute;
+    top: -220px;
+    left: 50%;
+    width: 680px;
+    height: 440px;
+    margin-left: -340px;
+    background: radial-gradient(circle, var(--glow) 0%, transparent 68%);
+    pointer-events: none;
+  }
+  .hero {
+    position: relative;
+    text-align: center;
+    padding-top: 56px;
+    padding-bottom: 44px;
+  }
+  .hero-icon {
+    width: 78px;
+    height: 78px;
+    border-radius: 18px;
+    box-shadow: var(--icon-shadow);
+    outline: 1px solid var(--icon-ring);
+    outline-offset: -1px;
+  }
+  .hero-name {
+    font-size: 1.12rem;
+    font-weight: 650;
+    letter-spacing: -0.01em;
+    margin-top: 16px;
+  }
+  .hero-sub {
+    color: var(--muted);
+    font-size: 0.84rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 3px;
+  }
+  .hero h1 {
+    font-size: 2.1rem;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    margin: 26px 0 0;
+  }
+  .badge {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 5px 13px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+
+  /* ---------- Body ---------- */
+  main { padding-top: 34px; padding-bottom: 60px; }
+  h2 {
+    font-size: 1.16rem;
+    letter-spacing: -0.01em;
+    margin: 36px 0 10px;
+    scroll-margin-top: 24px;
+  }
+  ul { padding-left: 22px; }
+  li { margin: 7px 0; }
+  .lead {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 12px;
+    padding: 17px 19px;
+    margin: 0 0 6px;
+  }
+  .lead p { margin: 0; }
+
+  /* ---------- Footer ---------- */
+  .site-footer {
+    background: var(--bar);
+    border-top: 1px solid var(--line);
+    padding: 40px 0 30px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1fr;
+    gap: 34px;
+  }
+  .footer-brand-top { display: flex; align-items: center; gap: 11px; }
+  .footer-brand-top img {
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+    outline: 1px solid var(--icon-ring);
+    outline-offset: -1px;
+  }
+  .footer-name { font-weight: 650; font-size: 1rem; letter-spacing: -0.01em; }
+  .footer-tag {
+    color: var(--muted);
+    font-size: 0.87rem;
+    line-height: 1.5;
+    margin: 13px 0 0;
+    max-width: 30ch;
+  }
+  .footer-col h3 {
+    font-size: 0.74rem;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 6px 0 12px;
+  }
+  .footer-col ul { list-style: none; margin: 0; padding: 0; }
+  .footer-col li { margin: 0 0 9px; font-size: 0.89rem; }
+  .footer-col a { color: var(--text); }
+  .footer-col a:hover { color: var(--accent); text-decoration: none; }
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 34px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line-soft);
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+  @media (max-width: 600px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 26px; }
+    .hero h1 { font-size: 1.8rem; }
+    .hero-icon { width: 68px; height: 68px; border-radius: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap hero">
+    <img class="hero-icon" src="appicon.svg" alt="Habit Quit">
+    <div class="hero-name">Habit Quit</div>
+    <div class="hero-sub">for iOS</div>
+    <h1>Privacy Policy</h1>
+    <span class="badge">Effective 11 August 2026</span>
+  </div>
+</header>
+
+<main class="wrap">
+
+<div class="lead">
+  <p>Habit Quit does not collect your data. Everything you enter stays on your iPhone. There are no accounts, no analytics, no advertising, and no trackers.</p>
+</div>
+
+<h2 id="overview">Overview</h2>
+<p>Habit Quit is an iOS app that helps you track habits you are trying to quit.</p>
+<p>The app has no servers and makes no network requests, so there is nothing for us to receive. Your habits, your check-ins, and your craving log sit in private storage on your device, where only the app can reach them.</p>
+
+<h2 id="collection">Information Collection and Use</h2>
+<p>The app saves the following to your device and nowhere else:</p>
+<ul>
+  <li>Habits you track: the name and emoji you pick, the start date, how often it used to happen, what it costs per day, and the triggers you select</li>
+  <li>The dates you mark a habit clean</li>
+  <li>Your craving log: the time, the trigger, the distraction you used, and whether you resisted or slipped</li>
+  <li>Reminder settings</li>
+  <li>App preferences such as theme, accent color, tab bar style, and display currency</li>
+</ul>
+<p>No other app can read any of it, and neither can we.</p>
+<p>The app asks permission to send notifications so it can show habit reminders. iOS schedules those on your device, and nothing goes to a server. You can switch them off in the app or in iOS Settings.</p>
+<p>If you write to us using Send feedback, we receive your email address and your message. We use it to reply, and we delete the message once your question is answered.</p>
+<p>Since nothing is transmitted, the App Store privacy label for this app reads Data Not Collected.</p>
+
+<h2 id="cookies">Cookies</h2>
+<p>The app does not use cookies. This page does not use cookies or analytics.</p>
+
+<h2 id="third-party">Third Party Services</h2>
+<p>The app includes no third-party SDKs, analytics tools, or advertising networks, so no outside company receives your data. If that ever changes, we will update this policy before the new version ships, name the company, and require it to protect your data to the standard described here.</p>
+
+<h2 id="security">Security</h2>
+<p>iOS keeps your data in the app's private container, protected by your device passcode and encryption. If you use iCloud Backup or encrypted local backups, iOS includes this app's data in that backup, the same as it does for other apps. Apple's privacy policy covers those backups.</p>
+<p>No method of storage is completely secure. Keeping your data on your own device rather than on a server does remove most of the risk.</p>
+
+<h2 id="retention">Data Retention and Deletion</h2>
+<p>Your data stays on your device until you delete it.</p>
+<ul>
+  <li>To delete one habit, press and hold its tile on the Today screen and choose Delete Habit. Its check-ins and craving entries go with it.</li>
+  <li>To delete everything, remove the app from your iPhone. iOS deletes all of its data.</li>
+  <li>To withdraw notification permission, switch reminders off in the app, or in iOS Settings under Habit Quit.</li>
+</ul>
+<p>We keep no copy on any server, so you never need to send us a deletion request and there is no waiting period.</p>
+
+<h2 id="children">Children's Privacy</h2>
+<p>This app is not directed at children under 13. The app collects no information from anyone, so it collects none from children either.</p>
+
+<h2 id="links">Links to Other Sites</h2>
+<p>The app can open this privacy policy page and Apple's rating prompt. We are not responsible for the content or the privacy practices of sites we do not operate. Apple's privacy policy governs the App Store and the rating prompt.</p>
+
+<h2 id="changes">Changes to This Privacy Policy</h2>
+<p>We may update this policy. Any change appears on this page under a new effective date. If the app ever starts collecting or transmitting data, this page will say so before that version ships.</p>
+
+<h2 id="contact">Contact Us</h2>
+<p>If you have questions or concerns about this Privacy Policy, or about how your information is handled, please contact us at <a href="mailto:tnisar157@gmail.com?subject=Habit%20Quit%20Privacy%20Policy">tnisar157@gmail.com</a>.</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="footer-brand-top">
+          <img src="appicon.svg" alt="">
+          <span class="footer-name">Habit Quit</span>
+        </div>
+        <p class="footer-tag">A habit tracker that keeps everything on your device.</p>
+      </div>
+
+      <nav class="footer-col">
+        <h3>Policy</h3>
+        <ul>
+          <li><a href="#collection">Information Collection</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#retention">Data Retention</a></li>
+          <li><a href="#children">Children's Privacy</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:tnisar157@gmail.com?subject=Habit%20Quit%20Privacy%20Policy">Email us</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 Habit Quit</span>
+      <span>Effective 11 August 2026</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
